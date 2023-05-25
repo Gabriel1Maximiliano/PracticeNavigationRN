@@ -2,10 +2,13 @@
 import React from 'react';
 import {Button, Text, View} from 'react-native';
 import { navigatorStyles } from '../theme/navigatorStyles';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 
 
-export const Pagina2Screen = ({navigation}:any) => {
+interface IProps extends  NativeStackScreenProps<any,any>{}
+
+export const Pagina2Screen = ({navigation}:IProps) => {
   return (
     <View>
         <Text style={ navigatorStyles.text } >Pagina2Screen</Text>
